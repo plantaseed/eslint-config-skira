@@ -1,0 +1,24 @@
+{
+  "name": "eslint-config-skira",
+  "version": "0.0.1",
+  "description": "Eslint config used at Skira",
+  "main": "index.js",
+  "scripts": {
+    "test": "N/A"
+  },
+  "author": "Skira AB",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">= 7",
+    "prettier": ">= 2",
+    "eslint-plugin-import": ">= 2",
+    "eslint-plugin-jsx-a11y": ">= 6",
+    "eslint-plugin-prettier": ">= 3",
+    "eslint-plugin-react": ">= 7",
+    "eslint-plugin-react-hooks": ">= 4"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "18.2.0",
+    "eslint-config-prettier": "6.11.0"
+  }
+}
