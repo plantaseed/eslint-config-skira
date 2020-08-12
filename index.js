@@ -11,6 +11,7 @@ module.exports = {
     'no-bitwise': 'off',
     'no-cond-assign': 'off',
     'no-await-in-loop': 'off',
+    'no-case-declarations': 'off',
 
     // React
     'react/jsx-one-expression-per-line': 'off',
@@ -27,45 +28,45 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        devDependencies: ['config/*.js', '**/*.spec.*', '**/webpack.*.js', '**/app/index.jsx']
-      }
+        devDependencies: ['config/*.js', '**/*.spec.*', '**/webpack.*.js', '**/app/index.jsx'],
+      },
     ],
     'no-unused-vars': ['error', { varsIgnorePattern: 'debug' }],
     'max-len': [
       'warn',
       {
-        code: 100,
+        code: 80,
+        comments: 80,
         tabWidth: 2,
-        comments: 100,
         ignoreComments: false,
         ignoreTrailingComments: true,
         ignoreUrls: true,
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
-        ignoreRegExpLiterals: true
-      }
+        ignoreRegExpLiterals: true,
+      },
     ],
     'import/order': [
       'error',
       {
         groups: [
           ['builtin', 'external'],
-          ['parent', 'internal', 'sibling', 'index', 'unknown']
+          ['parent', 'internal', 'sibling', 'index', 'unknown'],
         ],
         pathGroups: [
           {
             pattern: 'react*',
             group: 'external',
-            position: 'before'
-          }
+            position: 'before',
+          },
         ],
         pathGroupsExcludedImportTypes: ['react'],
         'newlines-between': 'always',
         alphabetize: {
           order: 'asc',
-          caseInsensitive: true
-        }
-      }
-    ]
+          caseInsensitive: true,
+        },
+      },
+    ],
   },
 };
