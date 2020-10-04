@@ -1,5 +1,11 @@
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks', 'plugin:prettier/recommended', 'prettier/react'],
+  extends: [
+    'airbnb',
+    'airbnb/hooks',
+    'plugin:prettier/recommended',
+    'prettier/react',
+  ],
+  plugins: ['skira'],
   rules: {
     // Disable
 
@@ -28,7 +34,12 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        devDependencies: ['config/*.js', '**/*.spec.*', '**/webpack.*.js', '**/app/index.jsx'],
+        devDependencies: [
+          'config/*.js',
+          '**/*.spec.*',
+          '**/webpack.*.js',
+          '**/app/index.jsx',
+        ],
       },
     ],
     'no-unused-vars': ['error', { varsIgnorePattern: 'debug' }],
@@ -68,5 +79,9 @@ module.exports = {
         },
       },
     ],
+
+    // Skira
+    'skira/sql-matching-double-quotes': 'warn',
+    'skira/sql-formatting': 'warn',
   },
 };

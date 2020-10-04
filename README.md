@@ -8,9 +8,10 @@
 
 ### Install peer dependencioes
 
-`yarn add --dev prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks`
+`yarn add --dev prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks https://github.com/plantaseed/eslint-plugin-skira.git`
 
 ### Add a .eslintrc
+
 ```
 {
   "extends": "skira"
