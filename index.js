@@ -22,6 +22,17 @@ module.exports = {
     // Import
     'import/prefer-default-export': 'off',
 
+    // Prettier
+    'prettier/prettier': [
+        'error', {
+            singleQuote: true,
+            printWidth: 80,
+            arrowParens: 'avoid',
+            trailingComma: 'all'
+        },
+        {usePrettierrc: false},
+    ],
+
     // Customized errors
     'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx'] }],
     'jsx-a11y/click-events-have-key-events': 1,
