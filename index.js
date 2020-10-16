@@ -11,7 +11,6 @@ module.exports = {
 
     // Eslint
     'no-underscore-dangle': 'off',
-    'no-nested-ternary': 'off',
     'no-plusplus': 'off',
     'no-continue': 'off',
     'no-bitwise': 'off',
@@ -30,7 +29,8 @@ module.exports = {
 
     // Customized errors
     'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx'] }],
-    'jsx-a11y/click-events-have-key-events': 1,
+    'react-hooks/exhaustive-deps': 'warn',
+    'jsx-a11y/click-events-have-key-events': 'warn',
     'import/no-extraneous-dependencies': [
       'error',
       {
