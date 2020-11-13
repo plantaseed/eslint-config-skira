@@ -29,13 +29,14 @@ module.exports = {
 
     // Prettier
     'prettier/prettier': [
-        'error', {
-            singleQuote: true,
-            printWidth: 80,
-            arrowParens: 'avoid',
-            trailingComma: 'all'
-        },
-        {usePrettierrc: false},
+      'error',
+      {
+        singleQuote: true,
+        printWidth: 80,
+        arrowParens: 'avoid',
+        trailingComma: 'all',
+      },
+      { usePrettierrc: false },
     ],
 
     // Customized errors
@@ -93,6 +94,5 @@ module.exports = {
 
     // Skira
     'skira/sql-matching-double-quotes': 'warn',
-    'skira/sql-formatting': 'warn',
   },
 };
