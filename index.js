@@ -5,6 +5,9 @@ module.exports = {
     'plugin:prettier/recommended',
     'prettier/react',
   ],
+  parserOptions: {
+    ecmaVersion: 2020,
+  },
   plugins: ['skira'],
   rules: {
     // Disable
