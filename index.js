@@ -54,7 +54,10 @@ module.exports = {
         ],
       },
     ],
-    'no-unused-vars': ['error', { varsIgnorePattern: 'debug' }],
+    'no-unused-vars': [
+      'error',
+      { varsIgnorePattern: 'debug', ignoreRestSiblings: true },
+    ],
     'max-len': [
       'warn',
       {
