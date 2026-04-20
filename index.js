@@ -22,6 +22,13 @@ module.exports = {
     'react/jsx-wrap-multilines': 'off',
     'react/forbid-prop-types': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
 
     // Import
     'import/prefer-default-export': 'off',
