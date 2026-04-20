@@ -3,7 +3,6 @@ module.exports = {
     'airbnb',
     'airbnb/hooks',
     'plugin:prettier/recommended',
-    'prettier/react',
   ],
   plugins: ['skira'],
   rules: {
